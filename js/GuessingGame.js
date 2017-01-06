@@ -95,8 +95,8 @@ function processGuess(output, game){
     } else if (output == "You Win!" || (output.indexOf("You Lose.") == 0)) {
         $('h1').text(output);        
         $('h2').text("Click the Reset button to try again.")
-        $('#submit').prop('disabled', true);
-        $('#hint').prop('disabled', true);
+        
+        $('#hint, #submit, #player-input').prop('disabled', true);
         if (output == "You Win!"){
             $('#player-input').removeClass('input');
             $('#player-input').removeClass('losing');
@@ -104,6 +104,11 @@ function processGuess(output, game){
             $('.guess').addClass('neutralBorder');
             $('#player-input').val(game.winningNumber);
         } else{
+            $('#guess' + game.pastGuesses.length).text(game.playersGuess)
+            $('#guess' + game.pastGuesses.length).removeClass('neutralBorder');
+            $('#guess' + game.pastGuesses.length).addClass('wrongBorder');
+            
+            
             $('#player-input').val(game.pastGuesses[4]);
             $('#player-input').removeClass('input');
 
@@ -145,7 +150,7 @@ $(document).ready(function() {
         $('#player-input').removeClass('winning')
         $('#player-input').addClass('input');
         $('#player-input').val("");
-        $('#hint, #submit').prop('disabled', false);
+        $('#hint, #submit, #player-input').prop('disabled', false);
         $('.guess').addClass('neutralBorder');
     });
     $('#hint').click(function(){
