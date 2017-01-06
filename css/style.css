@@ -1,0 +1,138 @@
+
+      .center {
+        text-align: center;
+      }
+      body {
+          background-image: url("../images/5.jpg");
+          
+      }
+      #app{
+            /*background-color: rgba(0,0,0, .1); 
+            margin: 50px auto;
+            width: 50%;*/ 
+      }
+      ul {
+          display: inline-block;
+          list-style: none;
+          padding: 0;
+         
+      }
+      #headers{
+          color: white;
+          background-color: rgba(0,0,0, .4);
+          border: 1px solid white;
+          border-radius: 20px;
+          width: 820px;
+          margin: 10px auto;
+      }
+      #main {
+        padding-bottom: 200px;
+      }
+      img {
+          display: inline;  
+          width: 200px;
+          height: 75px;
+      }
+      #footer {
+          width: 100%;
+          border-top: solid 5px seagreen;
+          background-color: white;
+          position: fixed;
+          bottom: 0;
+      }
+      .guessb{
+          display: inline;
+          border-radius: 10px;
+          font-size: 50px;
+          color: white;
+          padding: 0 25px;
+          margin: auto;
+          background-color: rgba(0,0,0, .8);
+          
+          
+      }
+      .guess{
+        display: inline-block;
+        
+        font-size: 4em;
+        height: 100px;
+        width: 100px;
+        border: 1px solid black; 
+        padding-left: 3px;
+        padding-right: 3px;
+        padding-top: 3px;
+        
+        border-radius: 10%;
+        background-color: rgba(0,0,0, .8);
+
+      }
+      .gessdeletethis{
+          display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        border: 2px #eee solid;
+        border-radius: 5px;
+      }
+
+      .winningBorder{
+          border: 4px solid orange;
+
+      }
+      .wrongBorder{
+          border: 4px solid red;
+          color: red;
+
+      }
+      .neutralBorder{
+          border: 2px solid white;
+          color: white;
+      }
+      .winning{
+          border: 4px solid lawngreen;
+          text-align: center;
+          border-radius: 100px;
+          height: 200px;
+          width: 200px;
+          background-color: rgba(0,0,0, .8);
+          color: lawngreen;
+          font-size: 50px;
+      }
+      .losing{
+          border: 4px solid red;
+          text-align: center;
+          border-radius: 100px;
+          height: 200px;
+          width: 200px;
+          background-color: rgba(0,0,0, .8);
+          color: red;
+          font-size: 50px;
+
+      }
+      #submit{
+          border: 2px solid;
+          border-radius: 100px;
+          height: 80px; 
+          position: absolute;
+          outline: none;
+          top: 100px;
+          left: 620px;
+      }
+      .input{
+          text-align: center;
+          border: 2px solid white;
+          border-radius: 100px;
+          height: 200px;
+          width: 200px;
+          background: black;
+          background-color: rgba(0,0,0, .8);
+          color: white;
+          font-size: 4em;
+          
+          
+      }
+      #input-parent{
+          position: relative;
+      }
+      *:focus{
+          outline: none;
+      }
