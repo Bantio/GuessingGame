@@ -7,9 +7,7 @@
           
       }
       #app{
-            /*background-color: rgba(0,0,0, .1); 
-            margin: 50px auto;
-            width: 50%;*/ 
+        
       }
       ul {
           display: inline-block;
@@ -40,20 +38,8 @@
           position: fixed;
           bottom: 0;
       }
-      .guessb{
-          display: inline;
-          border-radius: 10px;
-          font-size: 50px;
-          color: white;
-          padding: 0 25px;
-          margin: auto;
-          background-color: rgba(0,0,0, .8);
-          
-          
-      }
       .guess{
-        display: inline-block;
-        
+        display: inline-block; 
         font-size: 3em;
         height: 100px;
         width: 100px;
@@ -61,20 +47,11 @@
         padding-left: 3px;
         padding-right: 3px;
         padding-top: 14px;
-        
         border-radius: 10%;
         background-color: rgba(0,0,0, .8);
 
       }
-      .gessdeletethis{
-          display: inline-block;
-        height: 40px;
-        line-height: 40px;
-        border: 2px #eee solid;
-        border-radius: 5px;
-      }
-
-      .winningBorder{
+    .winningBorder{
           border: 4px solid orange;
 
       }
