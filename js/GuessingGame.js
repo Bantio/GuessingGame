@@ -34,8 +34,9 @@ Game.prototype.isLower = function(){
 }
 
 Game.prototype.playersGuessSubmission = function(guess){
-    if ((guess < 1) || (guess > 100) || 
-        (typeof guess != "number")){
+    
+    if ((isNaN(guess)) || ((guess < 1) || (guess > 100))) 
+        {
         throw "That is an invalid guess.";
     }
     else{ 
@@ -79,18 +80,18 @@ function newGame(){
 }
 
 function getGuess(obj){
-    var guess = +$('#player-input').val();
+    var guess = $('#player-input').val();
     $('#player-input').val('');
-    var output = obj.playersGuessSubmission(guess);
-    console.log(output);
+    var output = obj.playersGuessSubmission(parseInt(guess, 10));
+   
     return output;
 }
 
 
 function processGuess(output, game){
-    console.log("process");
+   
     if (output.indexOf("Already guessed") == 0){
-        console.log("here");
+        
         $('h1').text(output + " -- Guess again!");
     } else if (output == "You Win!" || (output.indexOf("You Lose.") == 0)) {
         $('h1').text(output);        
@@ -142,8 +143,8 @@ $(document).ready(function() {
         }
     });
     $('#reset').click(function(){
-        console.log("reset");
         game = newGame();
+        console.log(game.winningNumber);
         $('h1').text("Guessing Game!")
         $('h2').text("Guess a number between 1 and 100");
         $('li').text('-');

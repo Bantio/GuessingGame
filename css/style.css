@@ -46,17 +46,17 @@
         border: 1px solid black; 
         padding-left: 3px;
         padding-right: 3px;
-        padding-top: 14px;
+        padding-top: 16px;
         border-radius: 10%;
         background-color: rgba(0,0,0, .8);
 
       }
     .winningBorder{
-          border: 4px solid orange;
+          border: 2px solid orange;
 
       }
       .wrongBorder{
-          border: 4px solid red;
+          border: 2px solid red;
           color: red;
 
       }
